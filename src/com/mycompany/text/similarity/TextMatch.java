@@ -79,10 +79,10 @@ public class TextMatch {
             Cell cellSoundex = currentRow.createCell(4, CellType.NUMERIC);            
             cellSoundex.setCellValue(soundexDistance);
             
-            /*//#4 - Refined Soundex
+            //#4 - Refined Soundex
             int rsDistance = fs.difference(primeBusinessNameLower, whoisBusinessNameLower);            
             Cell cellFuzzy = currentRow.createCell(5, CellType.NUMERIC);            
-            cellFuzzy.setCellValue(rsDistance);*/
+            cellFuzzy.setCellValue(rsDistance);
             
             //#5 - Double Metaphone
             boolean matched = dm.isDoubleMetaphoneEqual(primeBusinessNameLower, whoisBusinessNameLower);            
